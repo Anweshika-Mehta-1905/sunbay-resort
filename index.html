@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sunset Bay Resort & Spa</title>
+    <style>
+        /* Element selector */
+        h2 {
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-align: center;
+            color: darkslategray;
+        }
+
+        /* ID selector */
+        #highlight {
+            color: darkred;
+            font-weight: bold;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="hero" style="background-color:#000;">
+    <div class="overlay"></div>
+
+    <header class="top-bar">
+        <span class="logo">Sunset Bay </span>
+        <nav>
+            <a href="#rooms">Rooms</a>
+            <a href="#facilities">Facilities</a>
+            <a href="#dining">Dining</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="hero-content">
+        <h1>Sunset Bay </h1>
+        <p style="font-style: italic;">Luxury Resort & Spa Experience</p>
+    </div>
+</div>
+
+<!--ROOM-->
+<section id="rooms" class="section">
+    <h2>Rooms & Suites</h2>
+
+    <div class="card">
+        <h3>Deluxe Room</h3>
+        <p class="description">
+            <span>Elegant interiors</span> with modern comfort define every stay at our 
+			resort. Each room is thoughtfully designed with tasteful décor, soft lighting,
+			and premium furnishings to create a relaxing atmosphere. Enjoy spacious king-sized 
+			beds with plush linens, high-speed free Wi-Fi for seamless connectivity, and large
+			windows offering breathtaking scenic views. Climate control, smart entertainment systems,
+			and well-appointed bathrooms add to the comfort. Whether you are traveling for 
+			leisure or business, our rooms provide a perfect blend of luxury, privacy, and 
+			tranquility, ensuring a truly memorable and restful experience.
+        </p>
+        <ul>
+           <li>Deluxe Room – <b id="highlight">₹6,500</b> per night</li>
+           <li>Executive Room – <b id="highlight">₹8,500</b> per night</li>
+           <li>Premium Suite – <b id="highlight">₹10,500</b> per night</li>
+           <li>Presidential Suite – <b id="highlight">₹14,000</b> per night</li>
+        </ul>
+
+    </div>
+</section>
+
+<!--FACILITIES-->
+<section id="facilities" class="section alt">
+    <h2>Facilities</h2>
+
+<ul>
+    <li>
+        <strong>Swimming Pool:</strong>
+        Enjoy our temperature-controlled swimming pool designed for relaxation and recreation,
+        featuring comfortable lounge seating and a serene atmosphere.
+    </li>
+
+    <li>
+        <strong>Spa & Wellness Center:</strong>
+        Rejuvenate your body and mind with our luxury spa services, including therapeutic massages,
+        steam rooms, and wellness treatments guided by professional therapists.
+    </li>
+
+    <li>
+        <strong>Fitness Gym:</strong>
+        Stay active in our fully equipped fitness center with modern cardio machines,
+        strength-training equipment, and personalized workout spaces.
+    </li>
+
+    <li>
+        <strong>Free High-Speed Wi-Fi:</strong>
+        Seamless high-speed internet access is available throughout the resort,
+        allowing guests to stay connected for both work and leisure.
+    </li>
+</ul>
+
+<p class="note">
+    All facilities are maintained in accordance with international hospitality and safety standards,
+    ensuring comfort, hygiene, and excellence throughout your stay.
+</p>
+
+</section>
+
+<!--DINING-->
+<section id="dining" class="section">
+    <h2>Dining Experience</h2>
+
+    <div class="card position-box">
+        <h3>Authentic Indian & Continental Dining</h3>
+<p>
+Experience a refined culinary journey with our <span>Authentic Indian & Continental cuisine</span>,
+expertly prepared using fresh, locally sourced ingredients. Our chefs blend traditional flavors
+with modern presentation to deliver dishes that satisfy both classic and contemporary tastes.
+From rich Indian curries and freshly baked breads to Continental specialties and handcrafted desserts,
+every meal is thoughtfully curated to ensure exceptional quality and taste.
+</p>
+
+<p>
+<strong>Dining Timings:</strong><br>
+Breakfast: 7:00 AM – 10:30 AM<br>
+Lunch: 12:30 PM – 3:30 PM<br>
+Dinner: 7:00 PM – 11:00 PM
+</p>
+
+
+        <!-- Absolute positioning -->
+        <span class="badge">Popular</span>
+    </div>
+</section>
+
+<!--CONTACT -->
+<section id="contact" class="section alt">
+    <h2>Contact Us</h2>
+
+    <p class="contact-text">
+        Sunset Bay Resort & Spa<br>
+        Vellore, Tamil Nadu<br>
+        Phone: +91 98765 43210
+    </p>
+</section>
+<!--BOOKING FORM-->
+<section id="booking" class="section">
+    <h2>Book Your Stay</h2>
+    
+    <form id="booking-form" style="max-width: 600px; margin: 0 auto;">
+        <div style="margin-bottom: 15px;">
+            <label for="guest-name">Name:</label><br>
+            <input type="text" id="guest-name" style="width: 100%; padding: 8px; margin-top: 5px;">
+        </div>
+        
+        <div style="margin-bottom: 15px;">
+            <label for="guest-email">Email:</label><br>
+            <input type="email" id="guest-email" style="width: 100%; padding: 8px; margin-top: 5px;">
+        </div>
+        
+        <div style="margin-bottom: 15px;">
+            <label for="guest-phone">Phone (10 digits):</label><br>
+            <input type="tel" id="guest-phone" style="width: 100%; padding: 8px; margin-top: 5px;">
+        </div>
+        
+        <div style="margin-bottom: 15px;">
+            <label for="check-in">Check-in Date:</label><br>
+            <input type="date" id="check-in" style="width: 100%; padding: 8px; margin-top: 5px;">
+        </div>
+        
+        <div style="margin-bottom: 15px;">
+            <label for="check-out">Check-out Date:</label><br>
+            <input type="date" id="check-out" style="width: 100%; padding: 8px; margin-top: 5px;">
+        </div>
+        
+        <div style="margin-bottom: 15px;">
+            <label for="room-type">Room Type:</label><br>
+            <select id="room-type" style="width: 100%; padding: 8px; margin-top: 5px;">
+                <option value="">Select Room</option>
+                <option value="deluxe">Deluxe - ₹6,500</option>
+                <option value="executive">Executive - ₹8,500</option>
+                <option value="premium">Premium - ₹10,500</option>
+                <option value="presidential">Presidential - ₹14,000</option>
+            </select>
+        </div>
+        
+        <div style="margin-bottom: 15px;">
+            <input type="checkbox" id="terms-checkbox">
+            <label for="terms-checkbox">I agree to terms and conditions</label>
+        </div>
+        
+        <button type="submit" id="submit-btn" style="padding: 10px 20px; background: #4CAF50; color: white; border: none; cursor: pointer;">
+            Submit Booking
+        </button>
+        
+        <button type="button" onclick="resetForm()" style="padding: 10px 20px; background: #f44336; color: white; border: none; cursor: pointer; margin-left: 10px;">
+            Reset Form
+        </button>
+    </form>
+</section>
+<!--FOOTER-->
+<footer class="footer">
+    <p>&copy; 2026 Sunset Bay Resort & Spa</p>
+	<p>by ANWESHIKA MEHTA 24BCE0790</p>
+</footer>
+<script src="24BCE0790_IA3_L1_JS_ANWESHIKA_MEHTA.js"></script>
+</body>
+</html>

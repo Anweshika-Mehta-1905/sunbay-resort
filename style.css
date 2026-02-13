@@ -1,0 +1,148 @@
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+}
+
+/* CLASS SELECTOR */
+.hero {
+    height: 100vh;
+    background-image: url("resort.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative; /* Position: relative */
+}
+
+/* POSITION: ABSOLUTE */
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+/* FLEX LAYOUT */
+.top-bar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 60px;
+    color: white;
+}
+
+/* SPAN styling */
+.logo {
+    font-weight: bold;
+    letter-spacing: 4px;
+    font-size: 20px;
+}
+
+/* TEXT PROPERTIES */
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    text-transform: uppercase;
+}
+
+/* CENTER CONTENT */
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+/* FONT PROPERTIES */
+.hero-content h1 {
+    font-size: 64px;
+    font-weight: bold;
+}
+
+/* BOX MODEL DEMONSTRATION */
+.section {
+    background-color: #ffffff;
+    padding: 60px;      /* Padding */
+    margin: 20px;       /* Margin */
+    border: 2px solid #ddd; /* Border */
+}
+
+/* ALTERNATE BACKGROUND */
+.section.alt {
+    background-color: #f4f4f4;
+}
+
+/* CARD DESIGN */
+.card {
+    border-width: 2px;
+    border-style: solid;
+    border-color: #ccc;
+    padding: 25px;
+    margin: 20px 0;
+}
+
+/* LINE HEIGHT */
+.description {
+    line-height: 1.8;
+}
+
+/* LIST STYLING */
+ul {
+    line-height: 2;
+}
+
+/* PSEUDO-ELEMENTS */
+.description::first-letter {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.note::first-line {
+    font-weight: bold;
+}
+
+.card::before {
+    content: "★ ";
+    color: goldenrod;
+}
+
+.card::after {
+    content: " ✔";
+    color: green;
+}
+
+/* POSITIONING DEMO */
+.position-box {
+    position: relative;
+}
+
+/* ABSOLUTE */
+.badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: darkred;
+    color: white;
+    padding: 5px 10px;
+}
+
+/* FIXED POSITION */
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* STICKY POSITION */
+h2 {
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+}
